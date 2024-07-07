@@ -59,3 +59,34 @@ m 控制宽度，要求是数字（很少使用），设置的宽度小于数字
 fNum = 12.345
 message = "测试的%.2f" % fNum
 print(message)
+
+# 快速字符串格式化-f标记
+
+name = "张三"
+set_up_year = 2000
+stock_price = 12.32
+message = f"你好{name}，成立与{set_up_year}，价格是{stock_price}"
+print(message)
+
+"""
+表达式进行字符串格式化
+
+f"{表达式}"
+"%s\%d\%f" % (表达式, 表达式, 表达式)
+"""
+
+print("结果：%d" % (1 + 1))
+print(f"结果：{1 * 3}")
+print("字符串在Python中的类型名称是：%s" % type("字符串"))
+
+# 小练习
+
+name = "科技公司"
+stock_price = 19.99
+stock_code = "008979"
+stock_price_daily_growth_factor = 1.2
+growth_days = 7
+message1 = f"公司：{name}，股票代码：{stock_code}，当前股价：{stock_price}"
+message2 = "每日增长系数是：%.2f，经过%d天的增长后，股价达到了：%.2f" % (stock_price_daily_growth_factor, growth_days, stock_price * (stock_price_daily_growth_factor ** 7))
+print(message1)
+print(message2)
