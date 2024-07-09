@@ -17,3 +17,19 @@ print(f"10 != 10 结果是：{num1 != num2}")
 name1 = 'itcast'
 name2 = 'itethem'
 print(f"itcast == itethem 结果是：{name1 == name2}")
+
+# if 判断语句
+age = 30
+if age > 18:
+    print("我已经成年了")
+
+print("时间过得真快呀")
+
+# 练习题
+print("欢迎来到儿童游乐园，儿童免费，成人收费。")
+age = input("请输入你的年龄：")
+age = int(age)
+if age > 18:
+    print("您已成年，游玩需要补票10元")
+
+print("祝你游玩愉快")
