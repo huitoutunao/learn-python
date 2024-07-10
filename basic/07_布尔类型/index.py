@@ -42,3 +42,16 @@ elif age >= 30:
     print("else if")
 else:
     print("未成年免费")
+
+# if 嵌套判断
+
+if int(input("你的身高是多少：")) > 120:
+    print("升高超出限制，不能免费")
+
+    if int(input("你的vip级别是多少：")) > 3:
+        print("恭喜你，vip级别达标，能免费")
+    else:
+        print("对不起，你需要支付10元")
+
+else:
+    print("欢迎小朋友，免费游玩")
