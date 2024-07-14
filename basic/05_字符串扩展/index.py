@@ -90,3 +90,11 @@ message1 = f"公司：{name}，股票代码：{stock_code}，当前股价：{sto
 message2 = "每日增长系数是：%.2f，经过%d天的增长后，股价达到了：%.2f" % (stock_price_daily_growth_factor, growth_days, stock_price * (stock_price_daily_growth_factor ** 7))
 print(message1)
 print(message2)
+
+# 打印字符串不换行
+# print("Hello", end="")
+# print("World", end="")
+
+# 制表符 \t 使字符串对齐
+# print("Hello\tWorld")
+# print("你好\t世界")
