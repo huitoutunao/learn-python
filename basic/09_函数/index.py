@@ -71,3 +71,38 @@ if not result:
 # None用于声明无初始内容的变量
 
 name = None
+
+# 函数说明文档
+def add(x, y):
+    """
+    add函数可以接收2个参数，进行2数相加的功能
+    :param x: 形参x表示相加的其中一个参数
+    :param y: 形参y表示相加的其中一个参数
+    :return: 返回值是2数相加的结果
+    """
+    result = x + y
+    return result
+
+add(1, 2)
+
+# 函数局部变量
+def testA():
+    num = 100
+    print(num)
+
+testA()
+# print(num)
+
+# global关键字
+num = 100
+
+def test_a():
+    print("test_a")
+
+def test_b():
+    global num
+    num = 200
+
+test_a()
+test_b()
+print(f"全局变量 {num}")
