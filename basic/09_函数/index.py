@@ -26,7 +26,6 @@ my_len(str1)
 my_len(str2)
 my_len(str3)
 
-
 # 定义一个函数，输出相关信息
 def say_hi():
     print("hello world")
@@ -34,3 +33,41 @@ def say_hi():
 say_hi()
 
 # 定义一个函数的返回值
+def add(a, b):
+    res = a + b
+    return res
+
+r = add(1, 2)
+print(f"结果值：{r}")
+
+# 无return语句的函数返回值
+def say_hi():
+    print('你好')
+
+result = say_hi()
+print(f"无返回值函数，返回的内容是：{result}")
+print(f"无返回值函数，返回的内容是：{type(result)}")
+
+# 主动返回 None
+def say_hi2():
+    print('你好')
+    return None
+
+result = say_hi2()
+print(f"无返回值函数，返回的内容是：{result}")
+print(f"无返回值函数，返回的内容是：{type(result)}")
+
+# None用于if判断
+def check_age(age):
+    if age > 18:
+        return "SUCCESS"
+    else:
+        return None
+
+result = check_age(5)
+if not result:
+    print("未成年人不能进入网吧")
+
+# None用于声明无初始内容的变量
+
+name = None
