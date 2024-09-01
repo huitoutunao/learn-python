@@ -79,3 +79,8 @@ result1 = demo_list[0:3]
 print(f"序列切片1{result1}")
 result2 = demo_list[0:3:2]
 print(f"序列切片2{result2}")
+
+# 序列切片案例
+demo_str = "万过薪月，员序程白小来，nohtyP学"
+result3 = demo_str[::-1][9:14]
+print(f"倒序{result3}")
