@@ -71,3 +71,11 @@ print(f"count统计元素2数量：{count}")
 myList3 = [1, 1, 2, 2, 2, 3]
 count = len(myList3)
 print(f"len统计元素数量：{count}")
+
+# 序列切片
+# 语法：序列[起始下标:结束下标:步长]
+demo_list = [0, 1, 2, 3, 4, 5, 6]
+result1 = demo_list[0:3]
+print(f"序列切片1{result1}")
+result2 = demo_list[0:3:2]
+print(f"序列切片2{result2}")
