@@ -37,6 +37,20 @@ print("测试")
 # import my_module
 # my_module.test(1, 3)
 
-# __all__ 变量
-from my_module import *
-test2("哈哈哈")
+# __all__ 变量 对引入的 星号 * 才有作用
+# from my_module import *
+# test2("哈哈哈")
+
+# 使用自定义包
+# import my_package.my_module1
+# import my_package.my_module2
+
+# my_package.my_module1.info_print1()
+# my_package.my_module2.info_print2()
+
+# 建议使用这种
+from my_package import my_module1
+from my_package import my_module2
+my_module1.info_print1()
+my_module2.info_print2()
+
