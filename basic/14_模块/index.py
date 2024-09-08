@@ -42,6 +42,7 @@ print("测试")
 # test2("哈哈哈")
 
 # 使用自定义包
+# 注意：my_package 要在当前文件目录下，不然运行当前文件，会报找不到自定义包名
 # import my_package.my_module1
 # import my_package.my_module2
 
