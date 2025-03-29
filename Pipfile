@@ -7,6 +7,7 @@ name = "pip_conf_index_global"
 numpy = "*"
 pyecharts = "*"
 pymysql = "*"
+pyspark = "*"
 
 [dev-packages]
 
